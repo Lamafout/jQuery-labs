@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.containerOfTasks{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(48, 49, 49));
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    padding: 100px 0 100px 0;
+    gap: 100px;
+    height: 100%;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background: linear-gradient(to right, rgb(206, 133, 31), rgb(226, 167, 84));
+    text-align: center;
+    border-radius: 10px;
+    border: 6px solid rgb(134, 132, 14);
+}
+
+.taskHeader{
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+    height: 200px;
+    transition: 0.3s;
+
+}
+
+.taskHeader:hover{
+    transition: 0.3s;
+    background-color: rgb(134, 132, 14);
+}
+
+.taskLanding{
+    padding-top: 50px;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    display: none;
+}
+
+.selectSexContainer{
+    display: flex;
+    gap: 50px;
+    padding-left: 80px;
+}
+
+.selectSex{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input[type="radio"]{
+    transform: scale(2.0);
+    position: absolute;
+    left: -30px;
+}
+
+.selectHeightContainer{
+    display: flex;
+    padding-left: 80px;
+    gap: 50px;
+}
+
+input[type="range"]{
+    width: 200px;
+}
+
+.heightValue{
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    min-width: 80px;
+}
+
+.sendButton{
+    font-size: large;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    align-self: center;
+    width: 200px;
+    height: 65px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* Форма */
+.inputContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+.nameInput{
+    height: 40px;
+}
+.someInput{
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 5px;
+    border: 2px solid rgb(134, 132, 14);
+    transition: 0.4s;
+    background-color: rgb(191, 239, 146);
+}
+.someInput:focus{
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0 0 20px white;
+    background-color: white;
+}
+.emailInput{
+    height: 40px;
+}
+.dateInput{
+    font-family: sans-serif;
+    height: 40px;
+}
+.loginInput{
+    height: 40px;
+}
+.passwordInput{
+    height: 50px;
+}
+.errorType{
+    font-size: small;
+    color: red;
+}
+.buttonContainer{
+    justify-content: center;
+    padding: 20px;
+}
+.formButton{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(206, 133, 31);
+    border-radius: 10px;
+    border: 6px solid rgb(134, 132, 14);
+    padding: 30px 80px 30px 80px;
+    transition: 0.3s;
+}
+.formButton:hover{
+    background-color: rgb(158, 101, 22);
+    transition: 0.3s;
+}
+.formButton:disabled{
+    background-color: gray;
+}
+.inputContainer{
+    min-width: 600px;
+}
+.textareaRecense{
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border: 2px solid rgb(134, 132, 14);
+    transition: 0.4s;
+    background-color: rgb(191, 239, 146);
+}
+.textareaRecense:focus{
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0 0 20px white;
+    background-color: white;
+}
+
+
+/* Task2: radial menu */
+.radialMenu{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    align-self: center;
+    align-items: center;
+}
+
+.menuItem{
+    opacity: 0;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 100%;
+    transition: top 0.7s, left 0.7s, opacity 0.7s, background-color 0.3s;
+    background-color: black;
+}
+
+.menuItem:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.openMenu{
+    z-index: 1;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.openMenu:hover{
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+.openMenu::before{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: white;
+    left: 30px;
+    top: 28px;
+}
+
+.openMenu::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: white;
+    left: 30px;
+    top: 44px;
+}
+
+.openMenu span::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: white;
+    left: 30px;
+    top: 60px;
+}
+
+.openMenu:hover::before{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: black;
+    left: 30px;
+    top: 28px;
+}
+.openMenu:hover::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: black;
+    left: 30px;
+    top: 44px;
+}

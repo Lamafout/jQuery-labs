@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <script src="../script/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="containerOfTasks">
+
+        <!-- Task 1 -->
+
+        <div class="task">
+            <div class="taskHeader">
+                <p class="taskLanding">Задание 1</p>
+            </div>
+            <div class="container">
+                <h2 class="formLanding">Оставьте отзыв об игре!</h2>
+                <form action="">
+                    <div class="inputContainer">
+                        <p>Фамилия:</p>
+                        <input type="text" name="surname" class="nameInput someInput surname" placeholder="Иванов">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Имя:</p>
+                        <input type="text" name="firstname" class="nameInput someInput firstname" placeholder="Иван">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Отчество:</p>
+                        <input type="text" name="secondname" class="nameInput someInput secondname" placeholder="Иванович">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Дата рождения:</p>
+                        <input type="date" class="dateInput someInput" placeholder="pro2009">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Факультет:</p>
+                        <input type="text" class="nameInput someInput" placeholder="ФКТиПМ">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Кафедра:</p>
+                        <input type="text" class="nameInput someInput" placeholder="ПМИ">
+                    </div>
+                    <div class="inputContainer">
+                        <p>eMail:</p>
+                        <input type="email" class="emailInput someInput" placeholder="funnydog2009@mail.ru">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Логин:</p>
+                        <input type="text" class="loginInput someInput" placeholder="pro2009">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Пароль:</p>
+                        <input type="password" class="passwordInput someInput firstPasswordTry" placeholder="thEm0$tstr0n&p@$sword">
+                    </div>
+                    <div class="inputContainer">
+                        <p class="errorType"></p>
+                        <input type="password" class="passwordInput someInput secondPaswordTry" placeholder="Повторите пароль">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Отзыв:</p>
+                        <textarea name="recense" cols="30" rows="10" class="textareaRecense" placeholder="Какая же хорошая игра!"></textarea>
+                    </div>
+                    <div class="inputContainer buttonContainer">
+                        <input type="button" class="formButton" value="Send">
+                    </div>
+                </form>
+            </div>
+            
+        </div>    
+
+    <!-- Task 2 -->
+    
+        <div class="task">
+            <div class="taskHeader">
+                <p class="taskLanding">Задание 2</p>
+            </div>
+            <div class="container">
+                <p class="variant">Создать радиальное меню</p>
+                <div class="radialMenu">
+                    <div class="openMenu"><span></span></div>
+                    <div class="menuItem">1</div>
+                    <div class="menuItem">2</div>
+                    <div class="menuItem">3</div>
+                    <div class="menuItem">4</div>
+                    <div class="menuItem">5</div>
+                    <div class="menuItem">6</div>
+                    <div class="menuItem">7</div>
+                    <div class="menuItem">8</div> 
+                </div>
+            </div>
+        </div>
+    
+    <!-- Task 3 -->
+    
+        <div class="task">
+            <div class="taskHeader">
+                <p class="taskLanding">Задание 3</p>
+            </div>
+            <div class="container">
+                <p class="variant">Создать форму с radiobutton для выбора пола (м/ж), ползунком для ввода роста. Кнопка идеальный вес посылает запрос. На сервер передаёься параметр sex - man или woman - и рост. Передача с помощью Ajax методом Post</p>
+                <div class="selectSexContainer">
+                    <p>Пол:</p>
+                    <div class="selectSex">
+                        <p><input class="sexRadio" type="radio" value="man" name="sex">Мужской</p>
+                        <p><input class="sexRadio" type="radio" value="woman" name="sex">Женский</p>
+                    </div>
+                </div>
+                <div class="selectHeightContainer">
+                    <p>Рост:</p>
+                    <p class="heightValue">150</p>
+                    <input type="range" name="height" min="100" max="250" value="150">
+                </div>
+                <button class="sendButton">Узнать идеальный вес!</button>
+            </div>        
+        </div>
+
+    <!-- Task 4 -->
+    
+        <div class="task">
+            <div class="taskHeader">
+                <p class="taskLanding">Задание 4</p>
+            </div>
+            <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum vitae illum quod similique nemo ipsum autem obcaecati repellendus quaerat eligendi architecto aliquid nobis nulla, itaque perspiciatis delectus provident? Dolores debitis ratione velit rerum deleniti error fugiat eligendi dolorem, numquam dolor natus voluptatum itaque quam? Quod quisquam corporis aperiam vero illo officia mollitia ipsum magni veritatis praesentium, reiciendis eligendi similique minus tempore non placeat hic consequatur soluta voluptas, impedit eos?</div>
+        </div>
+    </div>
+
+
+
+    <script src="../script/accordeon.js"></script>
+    <script src="../script/form.js"></script>
+    <script src="../script/idealWeight.js"></script>
+    <script src="../script/radialMenu.js"></script>
+</body>
+</html>
