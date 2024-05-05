@@ -50,10 +50,10 @@ func handleFunc(w http.ResponseWriter, r *http.Request) {
 		}
 
 		var idealWeight float64
-		if data.Sex == "male" {
-			idealWeight = 0.9*height - 85 // формула для мужчин
+		if data.Sex == "man" {
+			idealWeight = (4*height/2.54 - 128) * 0.453 // формула для мужчин
 		} else {
-			idealWeight = 0.9*height - 105 // формула для женщин
+			idealWeight = (3.5*height/2.54 - 108) * 0.453 // формула для женщин
 		}
 
 		res := Response{
