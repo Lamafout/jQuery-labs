@@ -29,7 +29,6 @@ func main() {
 	handler := cors.Default().Handler(http.DefaultServeMux)
 
 	http.ListenAndServe(":8080", handler)
-	fmt.Println("Server started")
 }
 
 func handleFunc(w http.ResponseWriter, r *http.Request) {

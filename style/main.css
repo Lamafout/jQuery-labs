@@ -279,3 +279,22 @@ input[type="range"]{
     left: 30px;
     top: 44px;
 }
+
+.openMenu span{
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.openMenu span:hover::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: black;
+    left: 30px;
+    top: 60px;
+}
